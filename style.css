@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+main{
+	width: 100vw; height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: antiquewhite;
+	gap: 10px;
+}
+.output{
+	width: fit-content;
+	align-self: center;
+	max-width: 80%;
+}
+div.team{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	gap: 10px;
+}
+div.entity{
+	font-size: 150%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	background-color: brown;
+	height: fit-content;
+	border: 2.5px solid black;
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+	max-width: 25vw;
+}
+#output{
+	background-color: black;
+	color: white;
+	width: fit-content;
+	min-width: 25vw; height: 10rem;
+	font-size: 2rem;
+	word-break: keep-all;
+	text-align: center;
+
+}
+#entitys{
+	position: fixed;
+	top: 25%;
+	height: max-content; width: 100vw;
+	display: flex;
+	justify-content:center;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	flex-grow: 1;
+}
+#hub{
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	min-width: 25%;
+	height: 10%;
+	gap: 10px;
+	padding: 1rem;
+	border: 5px solid;
+	border-color:#00000000;
+	border-radius: 5rem;
+}
+#hub input{
+	width: fit-content;
+	height: 100%;
+	font-size: 200%;
+	flex-grow: 1;
+	margin: 1px;
+	border: 5px solid;
+	border-radius: 5rem;
+}
