@@ -36,14 +36,15 @@ img{
 	width: 100%;
 	max-width: 25vw;
 }
-#output{
-	background-color: black;
+#log{
+	background-color: rgb(0, 17, 255);
 	color: white;
 	width: fit-content;
 	min-width: 25vw; height: 10rem;
 	font-size: 2rem;
 	word-break: keep-all;
 	text-align: center;
+	border:5px solid black;
 
 }
 #entitys{
@@ -83,4 +84,13 @@ img{
 	margin: 1px;
 	border: 5px solid;
 	border-radius: 5rem;
+}
+.targeted{
+	border: 7.5px, solid
+}
+.targeted_enimy{
+	border-color: red;
+}
+.targeted_aliy{
+	border-color: green;
 }
