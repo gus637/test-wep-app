@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+body{
+    background-color: antiquewhite;
+	width: 100vw; height: 100vh;
+}
+body.aanmelden{
+	background-color: rgb(99, 99, 234);
+}
+nav {
+    display: inline-block;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;height: 10vh;
+    padding-left: 1%;
+    background-color: aquamarine;
+}
+main {
+	top: 20%;
+	width: 100%; min-height: 80%;
+}
+form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    min-width: 175px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.096) 4.5px 3.5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Labels netjes uitlijnen */
+form label {
+    text-align: right;
+    white-space: nowrap;
+    border-right: 0.5px dashed rgb(71, 71, 71);
+    padding-right: 5px;
+}
+
+/* Inputs en select dropdowns */
+form input, 
+form select {
+    width: 90%;
+    padding: 5px;
+}
+
+/* Knoppen op aparte regel */
+form div.buttons {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border-top: 1px dotted black;
+    padding-top: 5px;
+}
+p.warning {
+    color: red;
+}
+label.warning {
+    color: red;
+}
