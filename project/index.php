@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include_once "functions.php";
+require "functions.php";
 loginWithToken();
 ?>
 <!DOCTYPE html>

@@ -19,7 +19,7 @@ elseif(isset($_POST["add_team"])){
 		global $number;
 		$number = postGetClean("number");
 		if(!is_int($number)) $vars["number"] = [400, "de antal leden moet een nummer zijn."];
-		elseif($number == 0) $vars["number"] = [400, "een team kan niet destaan zonder leden."];
+		elseif($number <= 0) $vars["number"] = [400, "een team kan niet destaan zonder leden."];
 		else $vars["number"] = [0, $number];
 	}
 	if(isset($_POST["pass"])){
